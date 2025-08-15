@@ -4,20 +4,20 @@ import time
 # Defina as posições (x, y) dos três botões
 
 #notebook
-# iniciar_deteccao = (1778, 376)  # Exemplo de coordenadas do botão 1
-# excluir_todas_as_ilhas = (1804, 437)  # Exemplo de coordenadas do botão 2
-# detectar_ilhas = (1892, 393)  # Exemplo de coordenadas do botão 3
+iniciar_deteccao = (1819, 370)  # Exemplo de coordenadas do botão 1
+excluir_todas_as_ilhas = (1804, 437)  # Exemplo de coordenadas do botão 2
+detectar_ilhas = (1892, 393)  # Exemplo de coordenadas do botão 3
 
-# #monitor extra
-iniciar_deteccao = (1833, -715)  # Exemplo de coordenadas do botão 1
-excluir_todas_as_ilhas = (1828, -641)  # Exemplo de coordenadas do botão 2
-detectar_ilhas = (1889, -686)  # Exemplo de coordenadas do botão 3
+#monitor extra
+# iniciar_deteccao = (1833, -715)  # Exemplo de coordenadas do botão 1
+# excluir_todas_as_ilhas = (1828, -641)  # Exemplo de coordenadas do botão 2
+# detectar_ilhas = (1889, -686)  # Exemplo de coordenadas do botão 3
 
 # Tempo entre cada rodada (em segundos)
 intervalo = 30
 
 # Número de repetições
-repeticoes = 200
+repeticoes = 300
 
 # Iniciar Detecção
 print("Iniciando Detecção de Ilhas...")
@@ -26,7 +26,7 @@ pyautogui.click()
 time.sleep(intervalo)
 
 for i in range(repeticoes):
-    print(f"Rodada {i+1}/{repeticoes}")
+    print(f"\nRodada {i+1}/{repeticoes}")
 
     # Clique no botão 1
     pyautogui.moveTo(excluir_todas_as_ilhas[0], excluir_todas_as_ilhas[1])
